@@ -16,7 +16,11 @@ public class TwoRangesSum {
             int skippedSum = 0;
             int countedSum = 0;
             for(int i = 1; i <= lastInRow; i++) {
-                if(i % numberToSkip == 0) {
+                if(numberToSkip == lastInRow) {
+                    skippedSum += i;
+                    continue;
+                }
+                if(i == numberToSkip) {
                     skippedSum += i;
                 } else {
                     countedSum += i;
