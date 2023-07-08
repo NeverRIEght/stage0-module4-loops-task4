@@ -20,7 +20,7 @@ public class TwoRangesSum {
                     skippedSum += i;
                     continue;
                 }
-                if(i == numberToSkip) {
+                if(i % numberToSkip == 0) {
                     skippedSum += i;
                 } else {
                     countedSum += i;
